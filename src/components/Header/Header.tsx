@@ -9,19 +9,27 @@ export interface HeaderProps {
 
 const HeaderDiv = styled.div`
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     padding: 10px 0;
     height: 60px;
     border-bottom: 1px solid #ccc;
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin: 0 auto;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     right: 0;
     font-size: 24px;
+`;
+
+const InnerDiv = styled.div`
+    display: flex;
+    width: 80%;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
 `;
 
 const Title = styled.button`
@@ -38,11 +46,13 @@ export default function Header(props: HeaderProps) {
 
     return (
         <HeaderDiv>
-            <LeftNav />
-            <Title onClick={navigateToHome}>
-                <p>{props.title}</p>
-            </Title>
-            <RightNav />
+            <InnerDiv>
+                <LeftNav />
+                <Title onClick={navigateToHome}>
+                    <p>{props.title}</p>
+                </Title>
+                <RightNav />
+            </InnerDiv>
         </HeaderDiv>
     );
 }

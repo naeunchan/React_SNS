@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 const RightNav: React.FunctionComponent<{}> = (props) => {
     return (
-        <Menu className="left-nav">
+        <Menu className="right-nav">
             <NavDiv>
                 <NavList>
                     <NavLink to="/login">Login</NavLink>

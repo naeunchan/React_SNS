@@ -59,7 +59,7 @@ body {
     font-family: "Nanum Pen Script", cursive;
 }
 
-main {
+/* main {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -67,4 +67,21 @@ main {
     align-items: center;
     padding-top: 60px;
     font-size: 36px;
+} */
+
+main {
+    background-color: #a6ae24;
+    margin: 0 auto; /* auto 알아서 중앙으로 맞춰줌 */
+    border-bottom: 1px solid #000000;
+    padding: 20px 0 20px 0;
+    width: 80%;
+    height: 150px;
+}
+
+.left-nav {
+    margin-right: auto;
+}
+
+.right-nav {
+    margin-left: auto;
 }

@@ -13,7 +13,6 @@ const MenuDiv = styled.div`
     justify-content: center;
     height: 100%;
     background-color: white;
-    margin: 0;
 `;
 
 const MenuList = styled.div`
@@ -29,7 +28,7 @@ const MenuList = styled.div`
 
 export default function Menu(props: MenuProps) {
     return (
-        <MenuDiv>
+        <MenuDiv className={props.className}>
             <MenuList>{props.children}</MenuList>
         </MenuDiv>
     );
